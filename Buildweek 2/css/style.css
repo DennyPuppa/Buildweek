@@ -1,0 +1,60 @@
+body{
+    background-color: black;
+}
+
+.logo{
+    width: 110px;
+    height: 80px;
+}
+
+.avatar-user{
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 6px 10px;
+}
+
+.avatar-profile-picture{
+    width: 30px;
+    height: 30px;
+}
+
+.site-submit{
+    background: #fff;
+    border-radius: 50px;
+    padding: 10px 12px;
+    color: black;
+    max-width: 85%;
+}
+
+.site-submit label{
+    font-weight: bold;
+}
+
+.input-search{
+    border: none;
+    padding-left: 0px;
+}
+  
+  .input-search:focus {
+    outline: none;
+  }
+  
+  .btn--search {
+    background: #F1641E;
+    border: 0;
+    border-radius: 50px;
+    width: 70px;
+  }
+/* 
+  .btn--search:hover{
+    background: #f19c71;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    transition: 0.4s;
+  } */
+  
+  .site-submit {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
