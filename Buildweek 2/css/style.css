@@ -1,4 +1,8 @@
-body{
+/* body{
+    background-color: black;
+} */
+
+.header-bg{
     background-color: black;
 }
 
@@ -58,3 +62,37 @@ body{
     display: inline-block;
     width: 100%;
   }
+
+.header-img{
+    max-height: 1080px;
+}
+
+.header-img img{
+    object-fit: cover;
+}
+
+
+/* CSS SINGLE-PROPERTY PAGE */
+.gallery-property{
+    height: 386px;
+    max-height: 386px;
+}
+
+.mansonry-gallery-property-image{
+    object-fit: cover;
+}
+
+.square{
+    background-color: #fff;
+    top: 50px;
+    right: 0;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+
+.avatar-reviews{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
