@@ -44,18 +44,18 @@
   }
   
   .btn--search {
-    background: #F1641E;
+    background: #E41D57;
     border: 0;
     border-radius: 50px;
     width: 70px;
   }
-/* 
+
   .btn--search:hover{
-    background: #f19c71;
+    background: #E41D57;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
-    transition: 0.4s;
-  } */
+    transition: all 0.4s ease-in-out;
+  }
   
   .site-submit {
     position: relative;
@@ -71,6 +71,24 @@
     object-fit: cover;
 }
 
+/* CSS PROPERTY PAGE */
+.fa-solid.fa-circle-plus{
+    font-size: 35px;
+    color: #E41D57;
+}
+
+.fa-solid.fa-star{
+    color: #E41D57;
+    font-size: 12px;
+}
+
+.property-categories button{
+    border-radius: 20px;
+    border: 0.5px solid black;
+    padding: 6px 10px;
+    background-color: rgb(247, 247, 247);
+}
+
 
 /* CSS SINGLE-PROPERTY PAGE */
 .gallery-property{
@@ -82,12 +100,56 @@
     object-fit: cover;
 }
 
-.square{
+.fa-solid.fa-house,
+.fa-solid.fa-wand-magic-sparkles,
+.fa-solid.fa-location-dot,
+.fa-solid.fa-calendar-days,
+.fa-solid.fa-book-open{
+    font-size: 32px;
+}
+
+.sticky-form-property{
     background-color: #fff;
-    top: 50px;
+    top: 100px;
     right: 0;
-    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
-    box-shadow: 5px 5px 15px 5px #000000;
+    -webkit-box-shadow: 5px 5px 50px 10px #5555; 
+    box-shadow: 5px 5px 50px 10px #5555;
+    border-radius: 30px;
+}
+
+.input-form{
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.input-form input{
+    border: none;
+    background-color: transparent;
+    padding: 5px 0px;
+}
+
+#dateCheckIn{
+    border-right: 1px solid black;
+}
+
+.input-form > input{
+    border-top: 1px solid black;
+}
+
+.input-form input:focus{
+    border: none;
+}
+
+.btn-sticky-form{
+    background-color: #E41D57;
+    color: #fff;
+    font-weight: bold;
+    border:2px solid #E41D57;
+}
+
+.btn-sticky-form:hover{
+    border:2px solid #E41D57;
+    color: #E41D57;
 }
 
 

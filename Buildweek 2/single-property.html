@@ -64,7 +64,7 @@
 
         <!-- SEZIONE GALLERIA IMMAGINI -->
         <section>
-            <div class="container px-5">
+            <div class="container px-5 pb-5">
                 <div class="row rounded-5 overflow-hidden mx-3 d-none d-lg-flex gallery-property h-100">
                     <div class="col-6 p-0 pe-2 h-100">
                         <img class="h-100 w-100 object-fit-cover" src="./assets/1.webp" alt="">
@@ -104,7 +104,7 @@
                             <i class="fa-solid fa-house"></i>
                             <div>
                                 <h4>House</h4>
-                                <p>You will have the whole premise for you.</p>
+                                <p class="m-0">You will have the whole premise for you.</p>
                             </div>
                         </div>
 
@@ -112,7 +112,7 @@
                             <i class="fa-solid fa-wand-magic-sparkles"></i>
                             <div>
                                 <h4>Advanced Cleaning Methods</h4>
-                                <p>The host is committing to our 5-step cleaning process..</p>
+                                <p class="m-0">The host is committing to our 5-step cleaning process..</p>
                             </div>
                         </div>
 
@@ -120,7 +120,7 @@
                             <i class="fa-solid fa-location-dot"></i>
                             <div>
                                 <h4>Inverness</h4>
-                                <p>5 kilmore Rd.</p>
+                                <p class="m-0">5 kilmore Rd.</p>
                             </div>
                         </div>
 
@@ -128,7 +128,7 @@
                             <i class="fa-solid fa-calendar-days"></i>
                             <div>
                                 <h4>Cancellation Terms And Fees</h4>
-                                <p>Add your travel dates to know details about cancellation fees and terms.</p>
+                                <p class="m-0">Add your travel dates to know details about cancellation fees and terms.</p>
                             </div>
                         </div>
 
@@ -136,37 +136,40 @@
                             <i class="fa-solid fa-book-open"></i>
                             <div>
                                 <h4>Rules Of The House</h4>
-                                <p>It's forbidden to host parties, bring animals and smoke.</p>
+                                <p class="m-0">It's forbidden to host parties, bring animals and smoke.</p>
                             </div>
                         </div>
 
                     </div>
 
-                    <div class="col-4 order-md-1">
-                        <div class="square sticky-md-top p-3">
-                            <div class="row justify-content-between">
-                                <div class="col-6">Add dates to <br> see the prices</div>
-                                <div class="col-6">
-                                    <div class="d-flex align-items-baseline justify-content-end">
+                    <div class="col-12 col-lg-4 order-sm-0 order-lg-1 pb-5">
+                        <div class="sticky-form-property sticky-md-top p-3">
+                            <div class="d-flex justify-content-between">
+                                <p class="fs-5">Add dates to <br> see the prices</p>
+                                <div>
+                                    <div class="d-flex align-items-center justify-content-end gap-1">
                                         <i class="fa-solid fa-star"></i>
-                                        <p>4.0, 6 reviews</p>
+                                        <p class="m-0">4.0, 6 reviews</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row rounded-5 border-1">
-                                <div class="col-6">
-                                    <input class="" type="text" placeholder="ciao">
+                            <div class="px-3">
+                                <div class="d-flex flex-column input-form">
+                                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                                        <div class="form-group">
+                                            <label class="active" for="dateStandard"></label>
+                                            <input type="date" id="dateCheckIn" name="dateStandard">
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <label class="active" for="dateStandard"></label>
+                                            <input type="date" id="dateCheckOut" name="dateStandard">
+                                        </div>
+                                    </div>
+                                    <input class="px-1" type="text" placeholder="Guests">
                                 </div>
-                                <div class="col-6">
-                                    <input type="text" placeholder="ciao">
-                                </div>
-                                <div class="col-12">
-                                    <input type="text" placeholder="Guests">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <button class="btn text-center btn-dark w-100 rounded-3">SEND</button>
+                                <div class="py-3">
+                                    <button class="btn btn-sticky-form text-center w-100 rounded-3">Cancel Booking</button>
                                 </div>
                             </div>
                         </div>
