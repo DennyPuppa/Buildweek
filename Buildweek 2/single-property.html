@@ -27,18 +27,38 @@
                         <a class="nav-link d-none d-md-block" href="">Become a host</a>
                         <i class="fa-solid fa-globe" style="color: #000;"></i>
                         <div class="avatar-user d-flex align-items-center gap-3">
-                            <i class="fa-solid fa-bars" style="color: #949494;"></i>
+                            <i type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvas" aria-controls="offcanvas"
+                                class="fa-solid fa-bars" style="color: #949494;"></i>
                             <div class="avatar-profile-picture">
                                 <img class="w-100 rounded-circle" src="./assets/propic.png" alt="">
                             </div>
                         </div>
                     </div>
-
                 </nav>
             </div>
         </div>
     </header>
     <main>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <div class="logo">
+                                <img class="navbar-brand w-100" src="./assets/logo-pink.png" alt="airbnb Logo">
+                            </div>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav " aria-labelledby="dropdownMenuButton">
+                                <li class="nav-item"><a class="nav-link" href="#">Places to stay</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Experiences</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Online experiences</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
         <section class="container py-3">
             <div class="container px-5">
                 <div class="row">
@@ -89,8 +109,39 @@
             </div>
         </section>
 
+        <!-- CAROUSEL SU TABLET E MOBILE -->
+        <section class="d-lg-none">
+            <div class="container px-5 pb-4">
+                <div class="row rounded-5">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/1.webp" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/1.webp" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/1.webp" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- SEZIONE ICONE -->
-        <section class="container py-3">
+        <section class="py-3">
             <div class="container px-5">
                 <div class="row">
                     <div class="col-12 col-md-8 order-1">
@@ -128,7 +179,8 @@
                             <i class="fa-solid fa-calendar-days"></i>
                             <div>
                                 <h4>Cancellation Terms And Fees</h4>
-                                <p class="m-0">Add your travel dates to know details about cancellation fees and terms.</p>
+                                <p class="m-0">Add your travel dates to know details about cancellation fees and terms.
+                                </p>
                             </div>
                         </div>
 
@@ -145,7 +197,7 @@
                     <div class="col-12 col-lg-4 order-sm-0 order-lg-1 pb-5">
                         <div class="sticky-form-property sticky-md-top p-3">
                             <div class="d-flex justify-content-between">
-                                <p class="fs-5">Add dates to <br> see the prices</p>
+                                <p class="fs-5">Book your dreaming house</p>
                                 <div>
                                     <div class="d-flex align-items-center justify-content-end gap-1">
                                         <i class="fa-solid fa-star"></i>
@@ -156,11 +208,11 @@
                             <div class="px-3">
                                 <div class="d-flex flex-column input-form">
                                     <div class="d-flex flex-column flex-md-row justify-content-between">
-                                        <div class="form-group">
+                                        <div class="form-group-date">
                                             <label class="active" for="dateStandard"></label>
                                             <input type="date" id="dateCheckIn" name="dateStandard">
                                         </div>
-    
+
                                         <div class="form-group">
                                             <label class="active" for="dateStandard"></label>
                                             <input type="date" id="dateCheckOut" name="dateStandard">
@@ -169,7 +221,8 @@
                                     <input class="px-1" type="text" placeholder="Guests">
                                 </div>
                                 <div class="py-3">
-                                    <button class="btn btn-sticky-form text-center w-100 rounded-3">Cancel Booking</button>
+                                    <button class="btn btn-sticky-form text-center w-100 rounded-3">Cancel
+                                        Booking</button>
                                 </div>
                             </div>
                         </div>
@@ -179,7 +232,7 @@
         </section>
 
         <!-- SEZIONE FORM CONTATTO -->
-        <section class="container py-3">
+        <section class="py-3">
             <div class="container px-5">
                 <div class="row">
                     <div class="col-12 col-lg-8">
@@ -210,7 +263,7 @@
         </section>
 
         <!-- SEZIONE USER REVIEW -->
-        <section class="container py-5">
+        <section class="py-5">
             <div class="container px-5">
                 <div class="row">
                     <div class="col-6">

@@ -17,14 +17,14 @@
     <header class="container-fluid header-bg position-relative">
         <div class="container position-absolute end-0 start-0">
             <div class="row">
-                <nav class="navbar navbar-expand-md d-flex justify-content-between align-items-center">
+                <nav class="navbar navbar-expand-md d-flex justify-content-between align-items-center px-2">
 
                     <div class="logo align-self-baseline">
                         <img class="navbar-brand w-100" src="./assets/logo.png" alt="airbnb Logo">
                     </div>
 
-                    <div id="navbar-menu"
-                        class="collapse navbar-collapse flex-column justify-content-center gap-5 pt-1">
+                    <div
+                        class="d-none d-lg-flex flex-column justify-content-center align-items-center gap-3 pt-1">
                         <ul class="navbar-nav gap-3">
                             <li class="nav-item">
                                 <a class="text-white" href="" class="nav-link">Places to stay</a>
@@ -66,6 +66,7 @@
                         <a class="nav-link d-none d-md-block text-white" href="">Become a host</a>
                         <i class="fa-solid fa-globe" style="color: #ffffff;"></i>
                         <div class="avatar-user d-flex align-items-center gap-3">
+                            
                             <i class="fa-solid fa-bars" style="color: #949494;"></i>
                             <div class="avatar-profile-picture">
                                 <img class="w-100 rounded-circle" src="./assets/propic.png" alt="">
@@ -81,6 +82,42 @@
         </div>
     </header>
     <main>
+        <div class="col-12 d-block d-lg-none p-5">
+            <div class="sticky-form-property sticky-md-top p-3">
+                <div class="d-flex justify-content-between">
+                    <p class="fs-5">Add dates to <br> see the prices</p>
+                    <div>
+                        <div class="d-flex align-items-center justify-content-end gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="m-0">4.0, 6 reviews</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-3">
+                    <div class="d-flex flex-column input-form">
+                        <div class="d-flex flex-column flex-md-row justify-content-between">
+                            <div class="form-group-location">
+                                <input class="px-1" type="text" placeholder="Location">
+                            </div>
+                            <div class="form-group-date">
+                                <label class="active" for="dateStandard"></label>
+                                <input type="date" id="dateCheckIn" name="dateStandard">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="active" for="dateStandard"></label>
+                                <input type="date" id="dateCheckOut" name="dateStandard">
+                            </div>
+                        </div>
+                        <input class="px-1" type="text" placeholder="Guests">
+                    </div>
+                    <div class="py-3">
+                        <button class="btn btn-sticky-form text-center w-100 rounded-3">Booking Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <section class="container py-3">
             <div class="row py-3">
                 <div class="col-6 col-lg-3 pb-2 pb-lg-0">
